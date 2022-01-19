@@ -1,7 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Bootstrap from 'bootstrap';
-import Nav from 'react-bootstrap/Nav';
 import Sidebar from './components/sidebar/sidebar';
 import Dashboard from './components/dashboard/dashboard';
 
