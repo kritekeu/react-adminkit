@@ -106,7 +106,6 @@ const Sidebar = (props) => (
                     </ul>
 
                     <div className="sidebar-cta">
-
                     </div>
                 </div>
             </nav>
