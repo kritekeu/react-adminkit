@@ -32,13 +32,17 @@ class ErrorBoundary extends React.Component {
 
 function App() {
   return (
-
+      <div className="wrapper">
           <ErrorBoundary>
           <Sidebar/>
+
               <Dashboard/>
           </ErrorBoundary>
 
-
+        {/*<Menu/>*/}
+        {/*<Dashboard/>*/}
+        {/*<Footer/>*/}
+      </div>
   );
 }
 
