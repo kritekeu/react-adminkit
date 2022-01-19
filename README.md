@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# A simple porting of adminKit into react.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Reference: [https://github.com/adminkit/adminkit](https://github.com/adminkit/adminkit) .
 
 ## Available Scripts
 
