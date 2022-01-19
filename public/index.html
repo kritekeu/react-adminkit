@@ -15,18 +15,70 @@
   <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
   <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
-  <link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
-  <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
+<!--  <link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">-->
+  <link rel="stylesheet" href="https://demo-basic.adminkit.io/css/app.css">
+
+
 <!--  <link href="%PUBLIC_URL%/dist/css/app.css" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style type="text/css">/* Chart.js */
+  /*
+   * DOM element rendering detection
+   * https://davidwalsh.name/detect-node-insertion
+   */
+  @keyframes chartjs-render-animation {
+    from { opacity: 0.99; }
+    to { opacity: 1; }
+  }
+
+  .chartjs-render-monitor {
+    animation: chartjs-render-animation 0.001s;
+  }
+
+  /*
+   * DOM element resizing detection
+   * https://github.com/marcj/css-element-queries
+   */
+  .chartjs-size-monitor,
+  .chartjs-size-monitor-expand,
+  .chartjs-size-monitor-shrink {
+    position: absolute;
+    direction: ltr;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+  }
+
+  .chartjs-size-monitor-expand > div {
+    position: absolute;
+    width: 1000000px;
+    height: 1000000px;
+    left: 0;
+    top: 0;
+  }
+
+  .chartjs-size-monitor-shrink > div {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: 0;
+    top: 0;
+  }
+  </style>
 </head>
 
 <body>
 
 
-  <div id="root"></div>
+  <div id="root" class="wrapper"></div>
 
-<!--<script src="%PUBLIC_URL%/dist/js/app.js"></script>-->
+<!--  <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>-->
+  <script src="https://demo-basic.adminkit.io/js/app.js"></script>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
