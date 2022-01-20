@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import './adminkit/src/scss/app.scss';
+// AdminKit (required)
+import "./adminkit/src/js/modules/bootstrap";
+import "./adminkit/src/js/modules/sidebar";
+import "./adminkit/src/js/modules/theme";
+import "./adminkit/src/js/modules/feather";
+
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
