@@ -1,5 +1,26 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import { Sliders } from 'react-feather';
+import {createUseStyles} from 'react-jss';
+import './../../adminkit/src/scss/3-components/_feather.scss';
+
+// const styles = createUseStyles({
+//     featherStyle : {
+//         width: "18px",
+//         height: "18px",
+//         strokeWidth: "2"
+//     },
+//     featherStyleSm : {
+//         width: "14px",
+//         height: "14px"
+//     },
+//     featherStyleLg : {
+//         width: "36px",
+//         height: "36px"
+//     }
+// });
+
+
 
 const Sidebar = (props) => (
 
@@ -16,8 +37,10 @@ const Sidebar = (props) => (
 
                         <li className="sidebar-item active">
 
-                            <Link className="sidebar-link" to="/"> <i className="align-middle" data-feather="sliders"></i> <span
-                                className="align-middle">Dashboard</span>
+                            <Link className="sidebar-link" to="/">
+                                <Sliders className="align-middle" width={18} strokeWidth={2}/>
+
+                                <span className="align-middle">Dashboard</span>
                             </Link>
                         </li>
                         <li className="sidebar-item">

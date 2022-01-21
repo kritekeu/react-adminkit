@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import Sidebar from '../components/sidebar/sidebar';
 import Navbar from '../components/navbar/navbar';
 
+import LineChart from '../components/charts/chart';
+
 const Reports = (props) => (
     <div className="wrapper">
     <Sidebar/>
         <div className="main">
 
             <Navbar/>
+            <LineChart />
         </div>
    {/*<Dashboard/>*/}
 </div>

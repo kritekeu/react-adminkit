@@ -35,7 +35,7 @@ export default class LineChart extends Component {
                     label: "Rejected",
                     borderColor: "#c45850",
                     backgroundColor:"#d78f89",
-                  
+
                 }
                 ]
             },
