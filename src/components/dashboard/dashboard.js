@@ -40,7 +40,7 @@ const Dashboard = (props) => (
 
                                                         <div className="col-auto">
                                                             <div className="stat text-primary">
-                                                                <Truck className="align-middle" width={18} strokeWidth={2}/>
+                                                                <Truck className="align-middle" width={18} strokeWidth={2} />
                                                             </div>
                                                         </div>
                                                     </div>

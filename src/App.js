@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Dashboard components
@@ -8,6 +8,8 @@ import Dashboard from './components/dashboard/dashboard';
 import Home from './pages/Home';
 import Reports from './pages/Reports';
 import Products from './pages/Products';
+import Login from './components/login/login';
+import  useToken from './components/auth/auth';
 
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -37,10 +39,19 @@ class ErrorBoundary extends React.Component {
     }
 }
 
+
 function App() {
+
+    const { token, setToken } = useToken();
+
+
+if(!token) {     // protected pages
+  return <Login setToken={setToken} />
+}
+
   return (
 <ErrorBoundary>
-      <BrowserRouter>
+      <BrowserRouter >
           <Routes>
               <Route  path='/' element={<Home/>}/>
               <Route  path='/reports' element={<Reports/>}/>

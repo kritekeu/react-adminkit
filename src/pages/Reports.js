@@ -5,6 +5,7 @@ import Sidebar from '../components/sidebar/sidebar';
 import Navbar from '../components/navbar/navbar';
 
 import LineChart from '../components/charts/chart';
+// import '../adminkit/src/js/app';
 
 const Reports = (props) => (
     <div className="wrapper">
