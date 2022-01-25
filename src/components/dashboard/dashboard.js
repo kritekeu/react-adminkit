@@ -1,6 +1,20 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../footer/footer';
 import Navbar from '../navbar/navbar';
+// import Functions from './functions';
+// Charts
+import "../../adminkit/src/js/modules/feather";
+// import "../../adminkit/src/js/modules/chartjs";
+// Forms
+import "../../adminkit/src/js/modules/flatpickr";
+// Maps
+import "../../adminkit/src/js/modules/vector-maps";
+
+//chart
+import LineChart from '../charts/chart';
+
+import { Truck } from 'react-feather';
 
 const Dashboard = (props) => (
             <div className="main">
@@ -26,7 +40,7 @@ const Dashboard = (props) => (
 
                                                         <div className="col-auto">
                                                             <div className="stat text-primary">
-                                                                <i className="align-middle" data-feather="truck"></i>
+                                                                <Truck className="align-middle" width={18} strokeWidth={2} />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -118,7 +132,7 @@ const Dashboard = (props) => (
                                     </div>
                                     <div className="card-body py-3">
                                         <div className="chart chart-sm">
-                                            <canvas id="chartjs-dashboard-line"></canvas>
+                                            <LineChart />
                                         </div>
                                     </div>
                                 </div>
@@ -282,5 +296,7 @@ const Dashboard = (props) => (
 
 <Footer/>
             </div>
+
+
 );
 export default Dashboard;

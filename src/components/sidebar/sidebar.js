@@ -1,4 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Sliders } from 'react-feather';
+import {createUseStyles} from 'react-jss';
+
+
 
 const Sidebar = (props) => (
 
@@ -14,10 +19,19 @@ const Sidebar = (props) => (
                         </li>
 
                         <li className="sidebar-item active">
-                            <a className="sidebar-link" href="index.html">
-                                <i className="align-middle" data-feather="sliders"></i> <span
-                                className="align-middle">Dashboard</span>
-                            </a>
+
+                            <Link className="sidebar-link" to="/">
+                                <Sliders  className="align-middle" width={18} strokeWidth={2}   />
+                                <span className="align-middle">Dashboard</span>
+                            </Link>
+                        </li>
+                        <li className="sidebar-item">
+                            {/*<a  className="sidebar-link" href="index.html" */}
+                            <Link className="sidebar-link" to="/reports"> <i className="align-middle" data-feather="sliders"></i> <span
+                                className="align-middle">Reports</span>
+                            </Link>
+
+                            {/*</a>*/}
                         </li>
 
                         <li className="sidebar-item">
